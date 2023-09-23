@@ -1,2 +1,2 @@
-# internal_SIH
+# PharmaHelp
 project for internal selection  for SIH
