@@ -1,0 +1,51 @@
+.name2{
+    border-radius:4px;
+    padding:5px;
+    width:240px;
+    box-shadow:10px 10px 30px;
+}
+#name1{
+    margin-right:10px;
+    padding:5px;
+}
+body{
+    background-image:url("https://cdn.pixabay.com/photo/2017/04/05/04/44/background-2203989_1280.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.cl{
+    font-size:22px;
+}
+
+.d2{
+   margin-bottom:20px;
+   
+}
+.g{
+    margin-right:10px;
+}
+.div{
+    align-content:center;
+}
+form{
+    margin-left:500px;
+   margin-top:65px;
+   padding:10px
+}
+
+#sub{
+    border-radius:5px;
+    width:200px;
+    font-size:23px;
+    background-color:lightgray;
+  margin-left:70px
+    
+}
+
+sub:hover{
+    color:gray;
+}
+    
+
+    /* border:10px solid black;
+} */

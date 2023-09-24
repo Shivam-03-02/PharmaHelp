@@ -1,0 +1,39 @@
+header>ul>li{
+    display: inline;
+
+}
+.title_cont>img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.prof_tag>p{
+    display: inline;
+}
+header>ul>li>p,header>ul>li>img{
+    width:30%;
+}
+
+
+main{
+    display: inline;
+    width: 100px;
+}
+h1{
+    width: 80%;
+}
+.pinfo{
+    width: 50%;
+    display: inline;
+}
+.k1>p{
+    display: inline;
+}
+.k2>p{
+    display: inline;
+}
+.aside{
+    width: 100px;
+    display: inline;
+}
