@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PharmaHelp - AI chatbot integrated health keeper</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/Logoph.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0 text-primary"><i class="far fa-hospital me-3"></i>PharmaHelp</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="" class="nav-item nav-link">ChatBot</a>
+            </div>
+            <a href="appointment.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <link rel="stylesheet" href="designing.css">
+    <div>
+        <form>
+            <p class="cl">Full Name</p><input type="text" class="name2" value="First Name"id="name1"><input type="text" class="name2" value="Last Name"><br>
+           <p class="cl">What is your age?</p><input type="text" class="name2" value="ex:25">
+           <p class="cl">What is your gender:</p><input type="radio" name="gender" id="male" class="g"> Male
+           <input type="radio" name="gender" id="female" class="g"> Female<br><br>
+          <p class="cl">Contact Number: </p><input type="tel" class="name2">
+          <p class="cl">Email Address:</p> <input type="email"class="name2">
+           <br><br><br>
+           <p class="cl">Check the conditions that apply to you:</p>
+          
+           <input type="checkbox" class="d2">
+<label for="d2"> Asthma</label><br>
+<input type="checkbox" class="d2">
+<label for="d2"> Cardiac Disease</label><br>
+
+<input type="checkbox" class="d2">
+<label for="d2"> Hypertension</label><br>
+
+<input type="checkbox" class="d2">
+<label for="d2"> Cancer</label><br>
+
+<input type="checkbox" class="d2">
+<label for="d2"> Diabetes</label><br>
+
+<input type="checkbox" class="d2">
+<label for="d2"> Epilepsy</label><br>
+
+<input type="checkbox" class="d2">
+<label for="d2"> Other</label><br><br><br>
+
+<p class="cl">Are you currently taking any medication?</p><input type="radio" name="gender" id="male"> Yes
+<input type="radio" name="gender" id="female"> No<br><br><br>
+
+<p class="cl">Do you have any medication allergies?</p><input type="radio" name="gender" id="male"> Yes
+<input type="radio" name="gender" id="female"> No
+<input type="radio" name="gender" id="female"> Not Sure<br><br><br>
+
+<input type="submit" value="Submit" id="sub">
+        </form>
+        
+    </div>
+</head>
+<body>
+
+    
+</body>
+</html>
