@@ -1,0 +1,41 @@
+
+The provided code implements a blockchain-based pharmaceutical supply chain management system with multiple roles, including Admin, Supplier, Manufacturer, Distributor, Retailer, and Transporter. Here is a summary of its key components and functionalities:
+
+Admin Contract:
+- Manages user roles and permissions.
+- Stores user information and allows role registration, revocation, and reassignment.
+
+Supplier Contract:
+- Allows suppliers to create raw material packages.
+- Maintains a record of previously created raw materials.
+- Permits only users with the "Supplier" role to create packages.
+
+Manufacturer Contract:
+- Enables manufacturers to use raw materials to create medicines.
+- Registers new medicines and exports them to distributors.
+- Tracks existing medicines and received raw materials.
+
+Distributor Contract:
+- Facilitates the receipt of medicines from manufacturers and distribution to retailers.
+- Keeps a record of distributed medicines.
+- Allows retailers to update medicine statuses (e.g., At Retailer, Sold, Expire, Damaged).
+
+Retailer Contract:
+- Involves retailers in receiving medicines from distributors and selling them.
+- Provides functionality to update medicine statuses.
+- Maintains the status of medicines.
+
+Transporter Contract:
+- Manages the transportation of medicines between different entities.
+- Allows transporters to load consignments based on their type (raw materials, medicines, retailer shipments).
+
+Common Elements:
+- Uses a shared Roles enum to manage user roles across contracts.
+- Utilizes events to log important contract activities.
+- Contracts accept an address of the admin contract during deployment to ensure centralized role and permission management.
+- Employs modifiers and mappings for data storage and access.
+- Defines specific functions for each contract role.
+
+In essence, this code establishes a secure and transparent supply chain system for pharmaceuticals,
+leveraging blockchain technology to monitor the movement of medicines from suppliers to consumers 
+while enforcing strict role-based access control and data tracking.
