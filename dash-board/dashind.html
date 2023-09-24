@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/newstyles.css">
 </head>
 <body>
     <header>
@@ -12,29 +12,41 @@
         <li class="title_cont">
         <img src="images/logo.jpg" alt="logo">
         </li>
-        <li><a href="phar (1).html">Book-Appointment</a></li>
+        <li class="book_app"><a href="phar (1).html">Book-Appointment</a></li>
         <li class="noti">
             <img src="images/bell.png" alt="noti_bell">
         </li>
         <li class="prof_tag">
-         <img src="images/prof_img.jpg" alt="prof_img"><p>MY NAME</p>            
+         <img src="images/prof_img.jpg" alt="prof_img"><h5>MY NAME</h5>            
         </li>
     </ul>
     </header>
+    <div class="maincon">
     <main>
         <h1>
             PATIENT PROFILE
-        </h1> <img src="images/pat_img.jpg" alt="patient_img">
-        <div class="pinfo">       
-        <div class="k"><h3>Jess Harold</h3>
-        <p>30 Yrs,Male</p></div>
-        <div class="k1"><h4>Occupation:</h4>
-        <p>Engineer</p></div>
-       <div class="k" ><h4>Birth:</h4>
+        </h1> 
+        <div class="main_inline">
+        <img src="images/pat_img.jpg" alt="patient_img">
+       <div class="flex"> 
+        <!-- <div class="pinfo">       
+        <div class="k">
+            <div class="nm">
+            <h3>Jess Harold</h3>
+        <p>30 Yrs,Male</p>
+        </div>
+
+    <div class="nm2">
+        <h4>Occupation:</h4>
+        <p>Engineer</p></div></div>
+        <div class="k">
+            <div class="nm"><h4>Birth:</h4>
        <p>30 Sep, 2021</p></div>
-      <div class="k2"> <h4>Address:</h4>
-       <p>Street 29 , bampam road,pin 10002</p></div>
+      <div class="nm2"> <h4>Address:</h4>
+       <p>Street 29 , bampam road,pin 10002</p>
     </div>
+      </div></div>
+
     <div class="medinfo">
         <div class="w">
             <p>Blood Type:</p>
@@ -48,7 +60,48 @@
             <p>Allergies</p>
             <p>Peanuts,peaches</p>
         </div>
+    </div> -->
+
+    <table class="tb1">
+        <tr>
+            <th>Jess Harold</th>
+            <th>Occupation</th>
+        </tr>
+        <tr>
+            <td>30 Yrs,Male</td>
+            <td>Engineer</td>
+        </tr>
+
+    
+        <tr>
+            <th>Birth</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+        <td>
+            30 Sep,2021
+        </td>
+        <td>
+            Street 29 , bampam road,pin 10002
+        </td>
+        </tr>
+    </table>
+   
+        <table class="tb2">
+            <tr>
+                <th>Blood Type:</th>
+                <td>O</td>
+            </tr>
+            <tr><th>Height:</th>
+            <td>170cm</td>
+            </tr>
+        <tr>
+            <th>Allergies:</th>
+            <td>Peanuts,peaches</td>
+        </tr>
+        </table>
     </div>
+</div>
     <div class="appointed_for">
         <h2>Previous Appointment</h2>
         <h4>loreem asdambjehbjbfkaks fkewjbkefhbejfhb</h4>
@@ -83,5 +136,6 @@
         <p>2 tablet per day</p>
     </aside>
     </div>
+</div>
 </body>
 </html>
