@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>PharmaHelp - AI chatbot integrated health keeper</title>
+    <meta charset="UTF-8">
+    
+    <title>Pharmacy</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -31,82 +31,152 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
-
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0 text-primary"><i class="far fa-hospital me-3"></i>PharmaHelp</h1>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h1 class="m-0 text-primary"><i class="far fa-hospital me-3"></i>PharmaHelp</h1>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
-                <a href="" class="nav-item nav-link">ChatBot</a>
-            </div>
-            <a href="appointment.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="phar.html" class="nav-item nav-link">Quick Diagnosis</a>
+                <a href="phar.html" class="nav-item nav-link">ChatBot</a>
         </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <link rel="stylesheet" href="designing.css">
-    <div>
-        <form>
-            <p class="cl">Full Name</p><input type="text" class="name2" value="First Name"id="name1"><input type="text" class="name2" value="Last Name"><br>
-           <p class="cl">What is your age?</p><input type="text" class="name2" value="ex:25">
-           <p class="cl">What is your gender:</p><input type="radio" name="gender" id="male" class="g"> Male
-           <input type="radio" name="gender" id="female" class="g"> Female<br><br>
-          <p class="cl">Contact Number: </p><input type="tel" class="name2">
-          <p class="cl">Email Address:</p> <input type="email"class="name2">
-           <br><br><br>
-           <p class="cl">Check the conditions that apply to you:</p>
-          
-           <input type="checkbox" class="d2">
-<label for="d2"> Asthma</label><br>
-<input type="checkbox" class="d2">
-<label for="d2"> Cardiac Disease</label><br>
-
-<input type="checkbox" class="d2">
-<label for="d2"> Hypertension</label><br>
-
-<input type="checkbox" class="d2">
-<label for="d2"> Cancer</label><br>
-
-<input type="checkbox" class="d2">
-<label for="d2"> Diabetes</label><br>
-
-<input type="checkbox" class="d2">
-<label for="d2"> Epilepsy</label><br>
-
-<input type="checkbox" class="d2">
-<label for="d2"> Other</label><br><br><br>
-
-<p class="cl">Are you currently taking any medication?</p><input type="radio" name="gender" id="male"> Yes
-<input type="radio" name="gender" id="female"> No<br><br><br>
-
-<p class="cl">Do you have any medication allergies?</p><input type="radio" name="gender" id="male"> Yes
-<input type="radio" name="gender" id="female"> No
-<input type="radio" name="gender" id="female"> Not Sure<br><br><br>
-
-<input type="submit" value="Submit" id="sub">
-        </form>
-        
+        <a href="appointment.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
-</head>
+</nav>
+<!-- Navbar End -->
 <body>
-
-    
+    <div class="container">
+        <form>
+            <p class="cl">Full Name</p>
+            <div class="input-group">
+                <input type="text" class="form-control name2" value="First Name" id="name1">
+                <input type="text" class="form-control name2" value="Last Name">
+            </div>
+            <br>
+            <p class="cl">What is your age?</p>
+            <input type="text" class="form-control name2" value="ex:25">
+            <p class="cl">What is your gender:</p>
+            <div class="form-check">
+                <input type="radio" name="gender" id="male" class="form-check-input g"> 
+                <label for="male" class="form-check-label">Male</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="gender" id="female" class="form-check-input g"> 
+                <label for="female" class="form-check-label">Female</label>
+            </div>
+            <br>
+            <p class="cl">Contact Number:</p> 
+            <input type="tel" class="form-control name2">
+            <p class="cl">Email Address:</p> 
+            <input type="email" class="form-control name2">
+            <br><br><br>
+            <p class="cl">Check the conditions that apply to you:</p>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input d2" id="asthma">
+                <label for="asthma" class="form-check-label">Asthma</label><br>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input d2" id="cardiac">
+                <label for="cardiac" class="form-check-label">Cardiac Disease</label><br>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input d2" id="hypertension">
+                <label for="hypertension" class="form-check-label">Hypertension</label><br>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input d2" id="cancer">
+                <label for="cancer" class="form-check-label">Cancer</label><br>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input d2" id="diabetes">
+                <label for="diabetes" class="form-check-label">Diabetes</label><br>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input d2" id="epilepsy">
+                <label for="epilepsy" class="form-check-label">Epilepsy</label><br>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input d2" id="other">
+                <label for="other" class="form-check-label">Other</label><br><br><br>
+            </div>
+            <p class="cl">Are you currently taking any medication?</p>
+            <div class="form-check">
+                <input type="radio" name="medication" id="takingMedication" class="form-check-input">
+                <label for="takingMedication" class="form-check-label">Yes</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="medication" id="notTakingMedication" class="form-check-input">
+                <label for="notTakingMedication" class="form-check-label">No</label>
+            </div><br><br><br>
+            <p class="cl">Do you have any medication allergies?</p>
+            <div class="form-check">
+                <input type="radio" name="allergies" id="haveAllergies" class="form-check-input">
+                <label for="haveAllergies" class="form-check-label">Yes</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="allergies" id="noAllergies" class="form-check-input">
+                <label for="noAllergies" class="form-check-label">No</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="allergies" id="notSureAllergies" class="form-check-input">
+                <label for="notSureAllergies" class="form-check-label">Not Sure</label>
+            </div><br><br><br>
+            <input type="submit" value="Submit" id="sub" class="btn btn-primary">
+        </form>
+    </div>
 </body>
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Address</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Services</h5>
+                <a class="btn btn-link" href="">AI PharmaHelper BOT</a>
+                <a class="btn btn-link" href="">Docotor Panel</a>
+                <a class="btn btn-link" href="">Personalised Dashboard</a>
+                <a class="btn btn-link" href="">Appointment Booking</a>
+                
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Quick Links</h5>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="">Our Services</a>
+                <a class="btn btn-link" href="">Terms & Condition</a>
+                <a class="btn btn-link" href="">Support</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">PharmaHelp</a>, All Right Reserved.
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
 </html>
